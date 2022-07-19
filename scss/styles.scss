@@ -7,19 +7,19 @@
 $h1-font: 'PT Serif', serif;
 $p-font: 'Poppins', sans-serif;
 $footer-font: 'Montserrat', sans-serif;
-$font-color: #333;
+$font-color: #000000;
+$font-color-footer: #BDBDBD;
 
-body {
+.Body {
     font-size: 18px;
     color: $font-color;
 }
 .Header {
     display: flex;
     flex-direction: column;
-    padding: 0 .5em;
+    /* padding: 0 .5em; */
     margin: 4em auto 2em auto;
-    max-width: 1100px;
-    min-width: 400px;
+    width: 85%;
     &-h1 {
         font-family: $h1-font;
         font-weight: 700;
@@ -59,53 +59,70 @@ body {
     grid-template-rows: repeat(3, auto);
     grid-gap: .5em;
     margin: 0 .5em;
-    max-width: 1100px;
-    min-width: 400px;
+    width: 85%;
     margin: 0 auto 150px auto;
     > :nth-child(1),
     :nth-child(3),
     :nth-child(5) {
         margin-top: 0;
+        justify-content: left;
     }
     > :nth-child(2),
     :nth-child(4),
     :nth-child(6) {
         margin-top: 3.5em;
+        justify-content: right;
     }
     @media (min-width: 700px) {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
         > :nth-child(1),
-        :nth-child(3),
-        :nth-child(4),
-        :nth-child(6) {
+        :nth-child(4) {
             margin-top: 0;
+            justify-content: left;
         }
         > :nth-child(2),
         :nth-child(5) {
             margin-top: 3.5em;
+            justify-content: center;
+        }
+        > :nth-child(3),
+        :nth-child(6) {
+            margin-top: 0;
+            justify-content: right;
         }
     }
 }
 .CrewMember {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 .Portrait {
     width: 70%;
-    img {
-
-    }
 }
 .Name {
+    margin-top: 5px;
     font-family: $p-font;
     font-weight: 600;
+    font-size: 14px;
 }
 .Position {
     font-family: $h1-font;
     font-weight: 400;
-    font-size: .7em;
+    font-size: 12px;
     text-transform: uppercase;
     writing-mode: vertical-lr;
+}
+.Footer {
+    width: 100vw;
+    &-p {
+        text-align: center;
+        font-family: $footer-font;
+        color: $font-color-footer;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    &-a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
 }
