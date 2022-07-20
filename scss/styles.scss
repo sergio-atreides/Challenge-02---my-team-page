@@ -13,17 +13,20 @@ $font-color-footer: #BDBDBD;
 .Body {
     font-size: 18px;
     color: $font-color;
+    margin: 0 auto;
+    @media (min-width: 1000px) {
+        width: 75vw;
+    }
 }
 .Header {
     display: flex;
     flex-direction: column;
-    /* padding: 0 .5em; */
     margin: 4em auto 2em auto;
     width: 85%;
     &-h1 {
         font-family: $h1-font;
         font-weight: 700;
-        font-size: 2.5em;
+        font-size: 2em;
         @media (min-width: 1100px) {
             width: 50vw;
         }
@@ -113,7 +116,7 @@ $font-color-footer: #BDBDBD;
     writing-mode: vertical-lr;
 }
 .Footer {
-    width: 100vw;
+    width: 100%;
     &-p {
         text-align: center;
         font-family: $footer-font;
