@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://raw.githubusercontent.com/sergio-atreides/Challenge-01---404-page/main/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/sergio-atreides/Challenge-02---my-team-page/main/screenshot.png)
 
 Hi! This is my attempt with the first DevChallenge.io challenge: a 404 page.
 
